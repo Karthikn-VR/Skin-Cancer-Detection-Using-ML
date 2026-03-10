@@ -1,0 +1,1 @@
+remove invalid next/document imports for App Router
