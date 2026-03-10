@@ -39,7 +39,7 @@ RUN python -m venv /opt/venv \
 
 # Install Node.js dependencies and build the frontend
 COPY package.json package-lock.json* ./
-RUN npm ci
+RUN npm install
 
 # Copy the rest of the source code
 COPY . .
