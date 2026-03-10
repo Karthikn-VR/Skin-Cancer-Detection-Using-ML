@@ -34,8 +34,8 @@ ENV NODE_ENV=development
 # Install Python dependencies in a virtualenv
 COPY backend/requirements.txt ./backend/
 RUN python -m venv /opt/venv \
-    && /opt/venv/bin/pip install --no-cache-dir --upgrade pip \
-    && /opt/venv/bin/pip install --no-cache-dir -r backend/requirements.txt
+    && /opt/venv/bin/pip install --upgrade pip setuptools wheel \
+    && /opt/venv/bin/pip install --default-timeout=1000 --retries=10 -r backend/requirements.txt
 
 # Install Node.js dependencies and build the frontend
 COPY package.json package-lock.json* ./
