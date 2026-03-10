@@ -1,0 +1,6 @@
+Metric,Value
+Accuracy,0.953
+Macro Precision,0.7694162357496979
+Macro Recall,0.7745069913947561
+Macro F1,0.7690436316823457
+Melanoma Sensitivity,0.8705357142857143

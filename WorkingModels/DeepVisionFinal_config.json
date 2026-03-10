@@ -1,0 +1,20 @@
+{
+    "label_map": {
+        "bkl": 0,
+        "nv": 1,
+        "df": 2,
+        "mel": 3,
+        "vasc": 4,
+        "bcc": 5,
+        "akiec": 6
+    },
+    "embedding_dim": 128,
+    "backbone": "resnet50",
+    "knn": {
+        "k": 5,
+        "metric": "cosine",
+        "weights": "distance"
+    },
+    "val_accuracy_knn": 0.9755,
+    "val_accuracy_cnn": 0.9586
+}
