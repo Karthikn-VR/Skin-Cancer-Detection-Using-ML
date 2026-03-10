@@ -28,6 +28,9 @@ WORKDIR /app
 # --- Build Stage ---
 FROM base AS builder
 
+# Set NODE_ENV to development to ensure devDependencies are installed for the build
+ENV NODE_ENV=development
+
 # Install Python dependencies in a virtualenv
 COPY backend/requirements.txt ./backend/
 RUN python -m venv /opt/venv \
