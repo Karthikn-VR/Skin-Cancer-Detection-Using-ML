@@ -44,8 +44,8 @@ RUN npm install
 # Copy the rest of the source code
 COPY . .
 
-# Build Next.js
-RUN npm run build
+# Build Next.js with production environment to prevent React dev server crash during static export
+RUN NODE_ENV=production npm run build
 
 # --- Runtime Stage ---
 FROM base AS production
