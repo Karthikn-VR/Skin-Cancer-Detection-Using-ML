@@ -20,7 +20,6 @@ from inference import predict
 from model_loader import ModelArtifacts, load_artifacts, SkinCNN
 from utils import load_pil_image, np_uint8_hwc_to_pil, pil_to_base64_png
 from torchvision import transforms
-import tensorflow as _tf_internal
 
 
 APP_TITLE = "AI Skin Cancer Detection API"
