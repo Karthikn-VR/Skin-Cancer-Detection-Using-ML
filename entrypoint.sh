@@ -2,6 +2,7 @@
 set -euo pipefail
 
 export PATH="/opt/venv/bin:$PATH"
+export PYTHONPATH="/app/backend:${PYTHONPATH:-}"
 
 BACKEND_HOST="${BACKEND_HOST:-127.0.0.1}"
 BACKEND_PORT="${BACKEND_PORT:-8000}"
